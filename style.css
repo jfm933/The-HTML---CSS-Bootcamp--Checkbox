@@ -1,0 +1,39 @@
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  background-color: #333; /* Dark background color */
+  color: #f4f4f4; /* Light text color */
+  padding: 20px;
+}
+
+#videoList {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #444; /* Darker background for the video list */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #f4f4f4; /* Light text color for the video list */
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+label {
+  font-size: 20px;
+  color: #f4f4f4; /* Light text color for labels */
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
