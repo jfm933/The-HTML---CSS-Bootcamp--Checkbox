@@ -39,7 +39,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function clearLocalStorage() {
-    localStorage.clear();
+    // Loop through all keys and remove ones for this course
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+
+      if (key.startsWith(courseKey)) {
+        localStorage.removeItem(key);
+      }
+    }
+
+    // Uncheck all checkboxes
     document
       .querySelectorAll('input[type="checkbox"]')
       .forEach((checkbox) => (checkbox.checked = false));
